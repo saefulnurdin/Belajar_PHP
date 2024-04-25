@@ -1,6 +1,6 @@
 <?php
 function menghitungHari($jumlahHari) {
-    $namaHari = date ('1', strtotime(date('Y-m-d')."+".$jumlahHari."days"));
+    $namaHari = date ('l', strtotime(date('Y-m-d')."+".$jumlahHari."days"));
     switch ($namaHari) {
         case 'Monday':
             $translateHari = "Senin";
